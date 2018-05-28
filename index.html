@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    </head>
+    <body>
+        <ul class="navbar" id="navbar">
+            <li>
+                <button class="navlink" onclick="scrolltodiv('experience')">EXPERIENCE</button>
+            </li>
+            <li>
+                <button class="navlink" onclick="scrolltodiv('services')">SERVICES</button>
+            </li>
+            <li>
+                <button class="navlink" onclick="scrolltodiv('portfolio')">PORTFOLIO</button>
+            </li>
+            <li>
+                <button class="navlink" onclick="scrolltodiv('skills')">SKILLS</button>
+            </li>
+            <li>
+                <button class="navlink" onclick="scrolltodiv('about')">ABOUT</button>
+            </li>
+        </ul>
+        <div class="halfway">
+        </div>
+        <div class="cards" id="about">
+            <div class="card no-bottom">
+                <img src="assets/img/me.png" class="me">
+                <div class="info">
+                    <h1>Isaac <span style="font-weight:normal">Krementsov</span></h1>
+                    <h2>Web developer</h2>
+                    <hr class="total">
+                    <p class="fact-file"><span class="key">AGE</span><span class="value"> 15</span></p>
+                    <p class="fact-file"><span class="key">ADDRESS</span><span class="value"> 322 Ockert Lane, Shelburne, Vermont, USA</span></p>
+                    <p class="fact-file"><span class="key">E-MAIL</span><span class="value"> isaackrementsov@gmail.com</span></p>
+                    <p class="fact-file"><span class="key">PHONE</span><span class="value"> +1 802 557 2154</span></p>
+                </div>
+                <div class="social">
+                        <a class="social-media-link"href="https://github.com/isaackrementsov"><i class="fa fa-github white"></i></a>
+                        <a class="social-media-link"href="https://instagram.com/isaac_krementsov_photography"><i class="fa fa-instagram white"></i></a>
+                        <a class="social-media-link"href="https://www.linkedin.com/in/isaac-krementsov-4a3438115/"><i class="fa fa-linkedin white"></i></a>
+                        <a class="social-media-link"href="https://stackoverflow.com/users/7412495/isaac-krementsov"><i class="fa fa-stack-overflow white"></i></a>
+                </div>
+            </div>
+            <div class="wrapper">
+                <a href="assets/resume.pdf" class="center resume" download>
+                    DOWNLOAD RESUME
+                </a>
+            </div>
+            <p class="text">
+                I am an enthusiastic web developer with a versatile skill set. 
+                At the beginning of my programming experience, I recognized that I was never done learning. 
+                Since then, I have become most familiar with using ExpressJS, MongoDB, Embedded JavaScript and HTML5 while continuously adding to that list. 
+                Whether you simply want to make your website known or need a real-time application, I am here to help.
+            </p>
+            <h1 class="center title"id="skills">Professional skills</h1>
+            <div class="card">
+                <div class="content">
+                    <div class="skill">
+                        <p>HTML & CSS</p>
+                        <div class="bar">
+                            <div class="fill" style="width:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>NodeJS & Express</p>
+                        <div class="bar">
+                            <div class="fill" style="width:75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>MongoDB</p>
+                        <div class="bar">
+                            <div class="fill" style="width:65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Java</p>
+                        <div class="bar">
+                            <div class="fill" style="width:25%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>JavaScript</p>
+                        <div class="bar">
+                            <div class="fill" style="width:75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>GoLang</p>
+                        <div class="bar">
+                            <div class="fill" style="width:25%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title center" id="portfolio">Portfolio</h1>
+            <div class="wrapper portfolio">
+                <div class="center square" style="background-image:url('assets/img/condevlightbulb.svg')">
+                    <div class="square-info"  onmouseover="opendiv('condev')"onmouseout="opendiv('condev')">
+                        <div class="square-info-text">
+                            <h2 class="bold">CONDEV</h2>
+                            <p class="small light">FULL STACK APPLICATION</p>
+                            <div style="display:none" id="condev" class="fade">
+                                <a href="https://github.com/isaackrementsov/condev"><i class="fa fa-github normal padded bk"></i></a>
+                                <a href="http://condev.us.to"><i class="fa fa-desktop normal padded bk"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center square"style="background-image:url('assets/img/devchatconnect.svg')">
+                    <div class="square-info"  onmouseover="opendiv('devchat', true)"onmouseout="opendiv('devchat', true)">
+                        <div class="square-info-text">
+                            <h2 class="bold">DEVCHAT</h2>
+                            <p class="small light">FULL STACK APPLICATION</p>
+                            <div style="display:none" id="devchat"class="fade">
+                                <a href="https://github.com/kcookvt/devchat"><i class="fa fa-github normal padded bk"></i></a>
+                                <a href="http://devchat.us.to"><i class="fa fa-desktop normal padded bk"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center square"style="background-image:url('assets/img/Logo.png')">
+                    <div class="square-info"  onmouseover="opendiv('ilyachistiakovarchitect')"onmouseout="opendiv('ilyachistiakovarchitect')">
+                        <div class="square-info-text">
+                            <h2 class="bold">ILYA CHISTIAKOV ARCHITECT</h2>
+                            <p class="small light">FULL STACK APPLICATION</p>
+                            <div style="display:none" id="ilyachistiakovarchitect"class="fade">
+                                <a href="https://github.com/isaackrementsov/ica"><i class="fa fa-github normal padded bk"></i></a>
+                                <a href="http://icawork.us.to"><i class="fa fa-desktop normal padded bk"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center square"style="background-image:url('assets/img/krementimg.png')">
+                    <div class="square-info" onmouseover="opendiv('serverportal')" onmouseout="opendiv('serverportal')">
+                        <div class="square-info-text">
+                            <h2 class="bold">SERVER PORTAL</h2>
+                            <p class="small light">FULL STACK APPLICATION</p>
+                            <div style="display:none" id="serverportal"class="fade">
+                                <a href="https://github.com/isaackrementsov/Imgupload"><i class="fa fa-github normal padded bk"></i></a>
+                                <a href="http://krementimg.us.to"><i class="fa fa-desktop normal padded bk"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title center" id="services">Services</h1>
+            <div class="card">
+                <div class="content">
+                    <div class="skill service">
+                        <i class="material-icons red big">format_paint</i>
+                        <h2>WEB DESIGN</h2>
+                        <p class="red">HTML, CSS, and JS websites</p>
+                        <hr>
+                        <p>
+                            If you want a simple front-end website, I can spin your dreams into HTML. 
+                            Perfect for anyone who wants to statically display their product without complex server interactions.
+                        </p>
+                    </div>
+                    <div class="skill service">
+                        <i class="material-icons red big">cloud_queue</i>
+                        <h2>BACKEND DEVELOPMENT</h2>
+                        <p class="red">Behind-the scenes magic</p>
+                        <hr>
+                        <p>
+                            Session data and database storage can be used with server-side technologies. 
+                            Whether you want an online store or a real-time chat, anything is possible with backend development. 
+                        </p>
+                    </div>
+                    <div class="skill service">
+                        <i class="material-icons red big">web</i>
+                        <h2>FULL STACK APPLICATIONS</h2>
+                        <p class="red">The whole package</p>
+                        <hr>
+                        <p>
+                            Offering synchronization between the two systems, full-stack development gives you a complete website
+                        </p>
+                    </div>
+                </div>
+            </div>            
+            <h1 class="title center" id="experience">Work experience</h1>
+            <div class="card">
+                <div class="content">
+                    <p class="red bold small">2018 - present</p>
+                    <h2>Access CVU</h2>
+                    <p class="light">TECHNOLOGY TUTOR</p>
+                    <p class="small">
+                        Technology is an essential component of the modern world. 
+                        Thus, I take my responsibility as a technology tutor and Champlain Valley School District employee with pride.
+                        By educating adults about such skills, I put my knowledge to use and grow my communicative abilities.
+                    </p>                    
+                </div>
+            </div>
+            <h1 class="title center">Education</h1>
+            <div class="card">
+                <div class="content">
+                    <p class="small red bold">Expected graduation 2021</p>
+                    <h2>Champlain Valley Union High School</h2>
+                    <p class="light">Current GPA of 4.2</p>
+                        <p class="small">Grade 9</p>
+                        <div class="class small">Core geometry</div>
+                        <div class="class small">Core english</div>
+                        <div class="class small">Core social studies</div>
+                        <div class="class small">Spanish 2</div>
+                        <div class="class small">Nexus program</div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
