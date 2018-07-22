@@ -221,12 +221,14 @@ h1 {
 }
 .light {
     font-weight: 300;
-    color: grey;
+    color: whitesmoke;
     font-size: 1vw;
 }
-.small {
-    font-size: 1.2vw;
-}
+.otherlight {
+    font-weight: 300;
+    color: grey;
+    font-size: 1vw;
+}  
 .class {
     display: inline-block;
     border-color: transparent;
@@ -243,7 +245,7 @@ h1 {
 }
 .square {
     height: 34vh;
-    width: 22vw;
+    width: 40.5vh;
     display: inline-block;
     margin: 0.5vh 0.5vw;
     background-size: 100%;
@@ -254,16 +256,19 @@ h1 {
 }
 .portfolio {
     position: relative;
-    width:70vw;
-    left: 15vw;
-    text-align: left;
+    max-width:70vw;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .square-info {
     position: relative;
     height: 30vh;
-    width: 20vw;
+    width: 37vh;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 1vh 1vw;
+    background-repeat: no-repeat;
 }
 .square-info-text {
     position: absolute;
