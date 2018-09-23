@@ -244,8 +244,11 @@ h1 {
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.01), 0 3px 20px 0 rgba(0, 0, 0, 0.01);
     margin: 1vh 0.3vw;
     background-color: #FFCDD2;
+    transition: 0.2s ease-in;
 }
 .class:hover {
+    color: white;
+    background-color: #F44336;
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.01), 0 3px 20px 0 rgba(0, 0, 0, 0.1);   
 }
 .square {

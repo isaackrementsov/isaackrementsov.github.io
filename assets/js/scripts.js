@@ -28,6 +28,12 @@ function openclass(cls){
         }
     }
 }
+function scrolltodiv(id){
+    var div = document.getElementById(id);
+    var navbar = document.getElementById('navbar');
+    document.getElementById(id).scrollIntoView()
+    window.scrollBy(0, -navbar.offsetHeight)
+}
 window.onscroll = function(){
     var navbar = document.getElementById('navbar');
     navbar.style.backgroundColor = 'white';
@@ -39,9 +45,19 @@ window.onscroll = function(){
         navbar.style.backgroundColor = 'transparent'
     }
 }
-function scrolltodiv(id){
-    var div = document.getElementById(id);
-    var navbar = document.getElementById('navbar');
-    document.getElementById(id).scrollIntoView()
-    window.scrollBy(0, -navbar.offsetHeight)
+window.onload = function(){
+    var clss = document.getElementsByClassName("class");
+    for(let i = 0; i < clss.length; i++){
+        clss[i].addEventListener('mouseover', function(){
+            txt = clss[i].innerHTML;
+            clss[i].style.minWidth = (clss[i].offsetWidth - 29 ) + "px";
+            clss[i].innerHTML = clss[i].getAttribute("hidden");
+            clss[i].setAttribute("hidden", txt)
+        });
+        clss[i].addEventListener('mouseout', function(){
+            txt = clss[i].innerHTML;
+            clss[i].innerHTML = clss[i].getAttribute("hidden");
+            clss[i].setAttribute("hidden", txt)
+        })
+    }
 }
