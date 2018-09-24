@@ -53,11 +53,10 @@ button {
     font-weight: bold;
     font-size: 1.2vw;
     padding: 2vh 1vw;
-    border-style: solid;
-    border-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
 }
 .navlink:hover {
-    border-bottom-style: solid;
     border-bottom-color: #F44336;
     transition: ease 0.2s;
 }
