@@ -53,6 +53,9 @@ button {
     font-weight: bold;
     font-size: 1.2vw;
     padding: 2vh 1vw;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
     border-bottom-style: solid;
     border-bottom-color: transparent;
 }
