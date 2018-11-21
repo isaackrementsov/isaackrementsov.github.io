@@ -78,6 +78,8 @@ for(let i = 0; i < pL.length; i++){
 function fixHeader(){
     if(window.innerWidth < 900){
         document.getElementById('topheading').innerHTML = '';
+    }else if(h.innerHTML == '' && window.innerWidth > 900 && window.scrollY > 0){
+        h.innerHTML = 'Krementsov Web Development';
     }
 }
 function startCounting(){
