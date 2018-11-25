@@ -5,10 +5,10 @@ var pL = document.getElementsByClassName('lg');
 var gs = document.getElementsByClassName('class');
 var ss = document.getElementsByClassName('s');
 var h = document.getElementById('topheading');
-/*kokosole, advance, condevchat, ica, bridge, imgupload, 
+/*kokosole, advance, condev, devchat, ica, bridge, imgupload, 
 github3, urban-infrastructure, chat sockets, chat websockets,
 chat websockets-advanced, spotify-busking-prototype*/
-var loc = 3102 + 943 + 3000 + 728 + 743 + 510 + 1216 + 283 + 52 + 138 + 284 + 798;
+var loc = 3102 + 943 + 1664 + 1670 + 728 + 743 + 510 + 1216 + 283 + 52 + 138 + 284 + 798;
 var projects = 8;
 var languages = 12;
 var scrolled = false;
