@@ -129,6 +129,7 @@ ul button {
 }
 .card-small {
     width: 380px;
+    margin: 2vh 1vw !important;
 }
 .flex-wrapper .card {
     margin: 0 auto;
