@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Krementsov Web Development</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            #cont {
+                height: 200px;
+                width: 200px;
+            }
+        </style>
+        <div id="cont"></div>
+    </body>
+    <script src="assets/js/progressbar.min.js">
+    </script>
+    <script>
+            var circle = new ProgressBar.Circle('#cont', {
+            color: '#FCB03C',
+            strokeWidth: 3,
+            trailWidth: 1,
+            text: {
+                value: '0'
+            }
+        });
+    </script>
+</html>
