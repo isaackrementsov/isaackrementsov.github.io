@@ -606,7 +606,7 @@ p a:hover {
     width: 690px; 
     max-width: 50vw
 }
-@media(max-aspect-ratio: 418/722){
+@media(max-aspect-ratio: 450/722){
     .work {
         padding: 0 3.5vw;
     }
@@ -626,6 +626,12 @@ p a:hover {
     .class {
         font-size: 12px;
         padding: 5px 7px;
+    }
+    .card-small {
+        max-width: 98vw !important;
+    }
+    .card-small div.info {
+        padding: 0 2vw;
     }
 }
 @media(max-aspect-ratio: 784/722){
