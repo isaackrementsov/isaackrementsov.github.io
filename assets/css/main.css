@@ -600,3 +600,38 @@ p a:hover {
     font-size: 30px;
     vertical-align: middle;
 }
+#first {
+    margin: 0; 
+    padding: 0 20px; 
+    width: 690px; 
+    max-width: 50vw
+}
+@media(max-aspect-ratio: 418/722){
+    .work {
+        padding: 0 3.5vw;
+    }
+    .key, .value {
+        margin: 0;
+    }
+    .card h1 {
+        font-size: 35px;
+    }
+    #first {
+        max-width: none !important;
+    }
+    .grade {
+        margin: 10px 0;
+        padding: 10px 9px;
+    }
+    .class {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+}
+@media(max-aspect-ratio: 784/722){
+    .project-lg, .project-sm {
+        height: 230px;
+        width: 250px;
+        margin: 10px;
+    }
+}
