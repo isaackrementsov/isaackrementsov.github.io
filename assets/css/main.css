@@ -606,7 +606,7 @@ p a:hover {
     width: 690px; 
     max-width: 50vw
 }
-@media(max-aspect-ratio: 450/722){
+@media(max-aspect-ratio: 500/700){
     .work {
         padding: 0 3.5vw;
     }
