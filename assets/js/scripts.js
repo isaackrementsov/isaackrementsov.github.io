@@ -7,8 +7,8 @@ var ss = document.getElementsByClassName('s');
 var h = document.getElementById('topheading');
 /*kokosole, advance, condev, devchat, ica, bridge, imgupload, 
 github3, urban-infrastructure, chat sockets, chat websockets,
-chat websockets-advanced, spotify-busking-prototype*/
-var loc = 3102 + 943 + 1664 + 1670 + 728 + 743 + 510 + 1216 + 283 + 52 + 138 + 284 + 798;
+chat websockets-advanced, spotify-busking-prototype, business-law-jeopardy*/
+var loc = 3102 + 943 + 1664 + 1670 + 728 + 743 + 510 + 1216 + 283 + 52 + 138 + 284 + 798 + 577;
 var projects = 8;
 var languages = 12;
 var scrolled = false;
