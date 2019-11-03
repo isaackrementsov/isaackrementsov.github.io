@@ -5,12 +5,12 @@ var pL = document.getElementsByClassName('lg');
 var gs = document.getElementsByClassName('class');
 var ss = document.getElementsByClassName('s');
 var h = document.getElementById('topheading');
-/*kokosole, advance, condev, devchat, ica, bridge, imgupload, 
+/*kokosole, advance, condev, devchat, ica, bridge, imgupload,
 github3, urban-infrastructure, chat sockets, chat websockets,
-chat websockets-advanced, spotify-busking-prototype, business-law-jeopardy*/
-var loc = 3102 + 943 + 1664 + 1670 + 728 + 743 + 510 + 1216 + 283 + 52 + 138 + 284 + 798 + 577;
-var projects = 8;
-var languages = 12;
+chat websockets-advanced, spotify-busking-prototype, business-law-jeopardy, mlhub, mlhub-desktop*/
+var loc = 3102 + 943 + 1664 + 1670 + 728 + 743 + 510 + 1216 + 283 + 52 + 138 + 284 + 798 + 577 + 1189 + 887;
+var projects = 9;
+var languages = 13;
 var scrolled = false;
 fixHeader();
 for(let i = 0; i < gs.length; i++){
@@ -130,7 +130,7 @@ function opendiv(id, fade){
     if(div.style.display == 'none'){
         if(fade){
             div.style.display = 'block';
-            div.style.opacity = 1;           
+            div.style.opacity = 1;
         }else{
             div.style.display = 'block'
         }
