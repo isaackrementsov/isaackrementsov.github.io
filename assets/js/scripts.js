@@ -7,9 +7,10 @@ var ss = document.getElementsByClassName('s');
 var h = document.getElementById('topheading');
 /*kokosole, advance, condev, devchat, ica, bridge, imgupload,
 github3, urban-infrastructure, chat sockets, chat websockets,
-chat websockets-advanced, spotify-busking-prototype, business-law-jeopardy, mlhub, mlhub-desktop*/
-var loc = 3102 + 943 + 1664 + 1670 + 728 + 743 + 510 + 1216 + 283 + 52 + 138 + 284 + 798 + 577 + 1189 + 887;
-var projects = 9;
+chat websockets-advanced, spotify-busking-prototype, business-law-jeopardy,
+mlhub, mlhub-desktop, virtual-trader, cheflyfe, driving, driving-client, robohawks-api*/
+var loc = 3102 + 943 + 1664 + 1670 + 728 + 743 + 510 + 1216 + 283 + 52 + 138 + 284 + 798 + 577 + 1189 + 887 + 408 + 9750 + 232 + 1114 + 389;
+var projects = 10;
 var languages = 13;
 var scrolled = false;
 fixHeader();
@@ -89,7 +90,7 @@ function startCounting(){
             clearInterval(timer);
         }
         ss[0].innerHTML = count;
-        count += 52;
+        count += 101;
     }, 0.1);
     var count2 = 0;
     var timer2 = setInterval(function(){
