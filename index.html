@@ -1,238 +1,538 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Isaac Krementsov</title>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Krementsov Web Development</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="XrblIVuBmQFyVBOJugXba3PbWLmZLLTQgb9IJnvzH_M" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <span class="navbar-brand h1 mb-0" href="#">
-                <div class="logo d-inline-block align-top"></div>
-                Krementsov Web Development
-            </span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Experience <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-cta d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3 mr-3" href="/contact">Contact me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch1" oninput="toggleColors()">
-                                <label class="custom-control-label" for="customSwitch1"></label>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="jumbotron jumbotron-fluid gradient">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <div class="container">
-                            <img src="assets/img/pic.jpg" class="img-responsive shadow rounded" width="300"/>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="container">
-                            <h1>Hi, I'm Isaac Krementsov</h1>
-                            <p>
-                                I am an enthusiastic web developer with a versatile skill set.
-                                At the beginning of my programming experience, I recognized that I was never done learning.
-                                Since then, I have become most familiar with using ExpressJS, MongoDB, Go, Java, HTML5, and
-                                more while continuously adding to that list. Whether you simply want to make your website
-                                known or need a real-time application, I am here to help.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-            </div>
+        <ul class="navbar navbar-initial" id="navbar">
+            <li class="header"><img id="profile" src="assets/img/logo-white.png"><span id="topheading"></span></li>
+            <li><button onclick="opendiv('vert')"><i class="material-icons">menu</i></button></li>
+        </ul>
+        <div id="vert" class="overlay" style="display: none">
+            <ul class="vertnav">
+                <li><button onclick="opendiv('vert')"><i class="material-icons">close</i></button></li>
+                <li><a href="#about" onclick="opendiv('vert')">About</a></li>
+                <li><a href="#skills" onclick="opendiv('vert')">Skills</a></li>
+                <li><a href="#portfolio" onclick="opendiv('vert')">Portfolio</a></li>
+                <li><a href="#services" onclick="opendiv('vert')">Services</a></li>
+                <li><a href="#experience" onclick="opendiv('vert')">Experience</a></li>
+            </ul>
         </div>
-        <div class="container main">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="row big-icon">
-                        <i class="fas fa-book-open"></i>
+        <div class="halfway"></div>
+        <div class="content" id="about">
+            <div class="card"style="padding-bottom: 0">
+                <div class="flex-wrapper" style="justify-content: space-evenly; align-items: center">
+                    <div class="profile" style="margin: 0; padding: 0 20px; ">
+                        <img src="assets/img/pic.jpg">
                     </div>
-                    <div class="row">
-                        <h3>Professional Skills</h3>
-                        <p>
-                            I focus on mobile, desktop and web app development.
-                            My skills are constantly evolving to fit the needs of
-                            modern software.
+                    <div class="info" id="first">
+                        <h1>Hi, I'm <b>Isaac Krementsov</b></h1>
+                        <h2>Mobile and Web Developer</h2>
+                        <hr>
+                        <p class="fact-file">
+                            <span class="key">Age</span><span class="value">16</span>
+                        </p>
+                        <p class="fact-file">
+                            <span class="key">Address</span><span class="value">322 Ockert LN, Shelburne, VT</span>
+                        </p>
+                        <p class="fact-file">
+                            <span class="key">E-mail</span><span class="value">isaackrementsov @gmail.com</span>
+                        </p>
+                        <p class="fact-file">
+                            <span class="key">Phone</span><span class="value">+1 802 557 2154</span>
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-8 card">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="skills">
-                                <li>
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML & CSS</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 90%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fab fa-node-js"></i>
-                                    <span>NodeJS and Express</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 85%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fas fa-database"></i>
-                                    <span>MongoDB</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 65%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fab fa-java"></i>
-                                    <span>Java</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 75%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fab fa-js"></i>
-                                    <span>Javascript</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 85%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fab fa-google"></i>
-                                    <span>GoLang</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 55%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fas fa-server"></i>
-                                    <span>SQL</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 70%"></div>
-                                    </div>
-                                </li>
-                            </ul>
+                <div class="social-media">
+                    <a class="social-media-link" href="https://github.com/isaackrementsov">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-media-link" href="https://www.quora.com/profile/Isaac-Krementsov">
+                        <i class="fab fa-quora"></i>
+                    </a>
+                    <a class="social-media-link" href="https://www.linkedin.com/in/isaac-krementsov-4a3438115/">
+                        <i class="fab fa-linkedin white"></i>
+                    </a>
+                    <a class="social-media-link" href="https://stackoverflow.com/users/7412495/isaac-krementsov">
+                        <i class="fab fa-stack-overflow white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="wrapper">
+                <a class="download-button" download href="assets/resume.pdf">DOWNLOAD RESUME</a>
+            </div>
+            <div class="para">
+                I am an enthusiastic web developer with a versatile skill set.
+                At the beginning of my programming experience, I recognized that I was never done learning.
+                Since then, I have become most familiar with using ExpressJS, MongoDB, Go, Java, HTML5, and more
+                while continuously adding to that list. Whether you simply want to make your website known or need
+                a real-time application, I am here to help.
+            </div>
+            <h1 class="heading" id="skills">Professional Skills</h1>
+            <div class="card">
+                <div class="info">
+                    <div class="flex-wrapper">
+                        <div class="skill stat">
+                            <p style="display:none">HTML & CSS</p>
+                            <i class="fab fa-html5 oneColor inline"></i>
+                            <div class="bar one inline">
+                                <div class="fill" style="width:80%"></div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <ul class="skills">
-                                <li>
-                                    <i class="fab fa-react"></i>
-                                    <span>React & React Native</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 65%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fas fa-atom"></i>
-                                    <span>Electron</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 65%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fab fa-git-square"></i>
-                                    <span>Git</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 75%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fas fa-mobile"></i>
-                                    <span>Flutter & Dart</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 70%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fas fa-fire"></i>
-                                    <span>Firebase</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 60%"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fas fa-brain"></i>
-                                    <span>Machine Learning</span>
-                                    <div class="bar">
-                                        <div class="fill" style="width: 30%"></div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="skill stat">
+                            <p style="display:none">NodeJS & Express</p>
+                            <i class="fab fa-node-js twoColor inline"></i>
+                            <div class="bar two inline">
+                                <div class="fill" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">MongoDB</p>
+                            <i class="fas fa-database threeColor inline"></i>
+                            <div class="bar three inline">
+                                <div class="fill" style="width:65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">Java</p>
+                            <i class="fab fa-java fourColor inline"></i>
+                            <div class="bar four inline">
+                                <div class="fill" style="width:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">JavaScript</p>
+                            <i class="fab fa-js-square fiveColor inline"></i>
+                            <div class="bar five inline">
+                                <div class="fill" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">GoLang</p>
+                            <i class="fab fa-google sixColor inline"></i>
+                            <div class="bar six inline">
+                                <div class="fill" style="width:70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">SQL</p>
+                            <i class="fas fa-server sevenColor inline"></i>
+                            <div class="bar seven inline">
+                                <div class="fill" style="width:70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">React Native</p>
+                            <i class="fab fa-react eightColor inline"></i>
+                            <div class="bar eight inline">
+                                <div class="fill" style="width:40%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">Git</p>
+                            <i class="fas fa-code-branch nineColor inline"></i>
+                            <div class="bar nine inline">
+                                <div class="fill" style="width:50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">Flutter & Dart</p>
+                            <i class="fas fa-mobile nineColor inline"></i>
+                            <div class="bar nine inline">
+                                <div class="fill" style="width:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">Firebase</p>
+                            <i class="fas fa-fire nineColor inline"></i>
+                            <div class="bar nine inline">
+                                <div class="fill" style="width:65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill stat">
+                            <p style="display:none">Machine Learning</p>
+                            <i class="fas fa-brain nineColor inline"></i>
+                            <div class="bar nine inline">
+                                <div class="fill" style="width:20%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <h3 class="text-center">Certifications</h3>
-            <div class="row certs">
-                <div class="card">
-                    <span><h4>Java</h4><a href="#"><i class="far fa-check-circle"></i></a></span>
-                    <p>TestDome</p>
+            <h1 class="heading" id="portfolio">Certifications</h1>
+            <div class="flex-wrapper" style="justify-content: center">
+                <div class="card card-small cert">
+                    <div class="info">
+                        <div class="cert-heading">
+                            <h1>Java</h1>
+                            <a href="https://www.testdome.com/cert/ff71c33415794c41ba09c6711e3cca18">
+                                <i class="material-icons check">check_circle_outline</i>
+                            </a>
+                        </div>
+                        <h2>TestDome Certification</h2>
+                    </div>
                 </div>
-                <div class="card">
-                    <span><h4>JavaScript</h4><a href="#"><i class="far fa-check-circle"></i></a></span>
-                    <p>TestDome</p>
+                <div class="card card-small cert">
+                    <div class="info">
+                        <div class="cert-heading">
+                            <h1>JavaScript</h1>
+                            <a href="https://www.testdome.com/cert/986bf0916a8a43f7a492b41cc04cac39">
+                                <i class="material-icons check">check_circle_outline</i>
+                            </a>
+                        </div>
+                        <h2>TestDome Certification</h2>
+                    </div>
                 </div>
-                <div class="card">
-                    <span><h4>JavaScript & NodeJS</h4><a href="#"><a href="#"><i class="far fa-check-circle"></i></a></span>
-                    <p>TestDome</p>
+                <div class="card card-small cert">
+                    <div class="info">
+                        <div class="cert-heading">
+                            <h1>Java & SQL</h1>
+                            <a href="https://www.testdome.com/cert/56b82662ff6245a6b802e600a4bfe5fe">
+                                <i class="material-icons check">check_circle_outline</i>
+                            </a>
+                        </div>
+                        <h2>TestDome Certification</h2>
+                    </div>
                 </div>
-                <div class="card">
-                    <span><h4>Java & SQL</h4><a href="#"><i class="far fa-check-circle"></i></a></span>
-                    <p>TestDome</p>
+                 <div class="card card-small cert">
+                    <div class="info">
+                        <div class="cert-heading">
+                            <h1>JavaScript & NodeJS</h1>
+                            <a href="https://www.testdome.com/cert/0bf26bbb5599496a86c4cec4231d1158">
+                                <i class="material-icons check">check_circle_outline</i>
+                            </a>
+                        </div>
+                        <h2>TestDome Certification</h2>
+                    </div>
                 </div>
             </div>
-            <h3 class="text-center">Projects</h3>
-            <div class="row center projects">
-                <div class="col-sm-2">
-                    <div class="row card small">
-
-                    </div>
-                    <div class="row card small">
-
+            <h1 class="heading">Projects</h1>
+            <div class="flex-wrapper" style="justify-content: center">
+                <div class="project-lg lg" id="project-lg" style="background-color: #f48fb1; background: linear-gradient(#f48fb1, #ec407a)">
+                    <img src="assets/img/advance-java.svg">
+                    <h2 class="title">Advance-Java</h2>
+                    <h3>Backend Development</h3>
+                    <div class="project-icons">
+                        <a href="/advance-java"><i class="fas fa-eye"></i></a>
+                        <a href="https://github.com/isaackrementsov/advance-java"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <div class="col-sm-6 card large">
-                    <div class="row">
-
+                <div class="project-sm-gallery">
+                    <div class="project-sm" style="background-color: #90caf9; background: linear-gradient(115deg, #90caf9, #42a5f5)">
+                        <img src="assets/img/bridge.svg">
+                        <h2 class="title">Bridge</h2>
+                        <h3>Full Stack Application</h3>
+                        <div class="project-icons">
+                            <a><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                            <a href="https://github.com/isaackrementsov/bridge"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-sm" style="background-color: #ef9a9a; background: linear-gradient(to right, #ef9a9a, #ef5350)">
+                        <img src="assets/img/condev.svg">
+                        <h2 class="title">Condev</h2>
+                        <h3>Full Stack Application</h3>
+                        <div class="project-icons">
+                            <a><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                            <a href="https://github.com/isaackrementsov/condev"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-lg project-med hidden" style="background-color: #f48fb1; background: linear-gradient(#f48fb1, #ec407a)">
+                    <img src="assets/img/advance-java.svg">
+                    <h2 class="title">Advance-Java</h2>
+                    <h3>Backend Development</h3>
+                    <div class="project-icons">
+                        <a href="/advance-java"><i class="fas fa-eye"></i></a>
+                        <a href="https://github.com/isaackrementsov/advance-java"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-lg project-med hidden" style="background-color: #ef9a9a; background: linear-gradient(to right, #ef9a9a, #ef5350)">
+                    <img src="assets/img/condev.svg">
+                    <h2 class="title">Condev</h2>
+                    <h3>Full Stack Application</h3>
+                    <div class="project-icons">
+                        <a><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                        <a href="https://github.com/isaackrementsov/condev"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-lg project-med hidden" style="background-color: #90caf9; background: linear-gradient(115deg, #90caf9, #42a5f5)">
+                    <img src="assets/img/bridge.svg">
+                    <h2 class="title">Bridge</h2>
+                    <h3>Full Stack Application</h3>
+                    <div class="project-icons">
+                        <a><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                        <a href="https://github.com/isaackrementsov/bridge"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-lg project-med hidden" style="background-color: #CE93D8; background: linear-gradient(205deg, #CE93D8, #AB47BC)">
+                    <img src="assets/img/kokosole.svg">
+                    <h2 class="title">Kokosole</h2>
+                    <h3>Full Stack Application</h3>
+                    <div class="project-icons">
+                        <a><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                        <a href="https://github.com/isaackrementsov/kokosole"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-lg project-med hidden" style="background-color: #81D4FA; background: linear-gradient(to right, #81D4FA, #29B6F6 )">
+                    <img src="assets/img/devchat.svg">
+                    <h2 class="title">Devchat</h2>
+                    <h3>Full Stack Application</h3>
+                    <div class="project-icons">
+                        <a href=""><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                        <a href="https://github.com/kcookvt/devchat"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-lg project-med hidden" style="background-color: white; background: linear-gradient(white, whitesmoke); color: rgb(110, 110, 110)">
+                    <h2 style="margin-top: 178px" class="title">ICA</h2>
+                    <h3>Full Stack Application</h3>
+                    <div class="project-icons">
+                        <a><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                        <a href="https://github.com/isaackrementsov/ica"><i class="fab fa-github" style="color: rgb(110, 110, 110)"></i></a>
+                    </div>
+                </div>
+                <div class="project-lg project-med hidden" style="background-color: #FFCC80; background: linear-gradient(to right, #FFCC80 , #FFA726)">
+                    <img src="assets/img/krementimg.svg">
+                    <h2 class="title">Server Portal</h2>
+                    <h3>Full Stack Application</h3>
+                    <div class="project-icons">
+                        <a><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                        <a href="https://github.com/isaackrementsov/imgupload"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-lg project-med hidden" style="background-color: #FFCC80; background: linear-gradient(to right, #42A5F5 , #1E88E5)">
+                    <img src="assets/img/logo.svg">
+                    <h2 class="title">MlHub</h2>
+                    <h3>Full Stack & Desktop App</h3>
+                    <div class="project-icons">
+                        <a><i class="fas fa-eye-slash" style="color: whitesmoke"></i></a>
+                        <a href="https://github.com/isaackrementsov/mlhub-desktop"><i class="fas fa-desktop"></i></a>
+                        <a href="https://github.com/isaackrementsov/mlhub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div
+            </div>
+            <button class="see-more" id="see-more" onclick="showMore()"><h2>See more</h2></button>
+            <h1 class="heading" id="services">Services</h1>
+            <div class="card" style="padding-bottom: 0;">
+                <div class="flex-wrapper" style="padding: 10px 20px; box-sizing: border-box; justify-content: space-evenly">
+                    <div class="service">
+                        <i class="material-icons" style="color: #9575CD;">format_paint</i>
+                        <h1>Web Design</h1>
+                        <h2>HTML, CSS, and JS websites</h2>
+                        <hr>
+                        <p>
+                            If you want a simple front-end website,
+                            I can spin your dreams into HTML.
+                            Perfect for anyone who wants to statically
+                            display their product without complex
+                            server interactions.
+                        </p>
+                        <div class="bubbles">
+                            <span class="bubble">HTML</span>
+                            <span class="bubble">CSS</span>
+                            <span class="bubble">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <i class="material-icons" style="color: #673AB7;">cloud</i>
+                        <h1>Backend Development</h1>
+                        <h2>Behind-the-scenes magic</h2>
+                        <hr>
+                        <p>
+                            Session data and database storage can be used with
+                            server-side technologies. Whether you want an online
+                            store or a real-time chat, anything is possible with
+                            backend development.
+                        </p>
+                        <div class="bubbles">
+                            <span class="bubble">Java</span>
+                            <span class="bubble">GoLang</span>
+                            <span class="bubble">NodeJS</span>
+                            <span class="bubble">SQL</span>
+                            <span class="bubble">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <i class="material-icons" style="color: #512DA8;">view_quilt</i>
+                        <h1>Full Stack Applications</h1>
+                        <h2>The whole package</h2>
+                        <hr>
+                        <p>
+                            Offering synchronization between the two systems,
+                            full-stack development gives you a complete website.
+                        </p>
+                        <div class="bubbles">
+                            <span class="bubble">React Native</span>
+                            <span class="bubble">Embedded JavaScript</span>
+                            <span class="bubble">FreeMarker</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row stats text-center">
-                <div class="col-sm-4">
-                    <span id="lines">0</span> Lines of Code
+            <h1 class="heading" id="experience">Experience</h1>
+            <div class="flex-wrapper" style="justify-content: center;">
+                <div class="statistic">
+                    <h1 class="s">0</h1>
+                    <h2>Lines of code</h2>
                 </div>
-                <div class="col-sm-4">
-                    <span id="projects">0</span> Major Projects
+                <div class="statistic">
+                    <h1 class="s">0</h1>
+                    <h2>Major Projects</h2>
                 </div>
-                <div class="col-sm-4">
-                    <span id="languages">0</span> Languages
+                <div class="statistic">
+                    <h1 class="s">0</h1>
+                    <h2>Languages</h2>
+                </div>
+            </div>
+            <h1 class="heading">Work</h1>
+            <div class="flex-wrapper">
+                <div class="card">
+                    <div class="work">
+                        <h3>2018-present</h3>
+                        <div class="job">
+                            <div class="company">
+                                <a href="https://www.linkedin.com/company/bodeganow/">
+                                    <img src="assets/img/SignCat.png">
+                                </a>
+                                <h2>Bodega</h2>
+                            </div>
+                            <div class="subjob">
+                                <h4>Full-Stack Developer</h4>
+                                <p>
+                                    I am using React Native and Firebase API
+                                    to collaboratively develop cross-platform apps.
+                                    After features are developed, I test and debug
+                                    them with the Expo development tool.
+                                </p>
+                                <p>
+                                    Using my past experience in Java,
+                                    I have brought Object-Oriented program
+                                    design to apps in order to make them as
+                                    scalable and modular as possible. While I
+                                    am not a designer, I do seek to build
+                                    interfaces that are intuitive and work
+                                    on both IOS and Android.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <div class="company">
+                                <a href="http://access.cvuhs.org">
+                                    <img src="assets/img/access.svg">
+                                </a>
+                                <h2>Access CVU</h2>
+                            </div>
+                            <div class="subjob">
+                                <h4>Teacher</h4>
+                                <p>
+                                    I have been teaching Java concepts to students
+                                    in a way that is simple but also explains the
+                                    inner workings of the code they write.
+                                    From there, I articulate the meanings of data
+                                    types, objects, classes, methods, and control flow.
+                                </p>
+                                <p>
+                                    To do so, I have prepared a
+                                    <a href="https://docs.google.com/presentation/d/1mrzV2tWGpI3zYyv0sgGIGZ_YJwFKcOADIlFa7YiuEXM/edit#slide=id.gcb9a0b074_1_0">
+                                        slideshow
+                                    </a>
+                                    to go along with vocal
+                                    instruction and visual diagrams.
+                                    Between short lectures, students
+                                    are asked to write small programs
+                                    using previously mentioned subjects
+                                    on an online REPL.
+                                </p>
+                            </div>
+                            <div class="subjob">
+                                <h4>Technology Tutor</h4>
+                                <p>
+                                    Technology is an essential component
+                                    of the modern world. Thus, I take my
+                                    responsibility as a technology tutor
+                                    and Champlain Valley School District
+                                    employee with pride. By educating adults
+                                    about such skills, I put my knowledge
+                                    to use and grow my communicative abilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="heading">Education</h1>
+            <div class="card">
+                <div class="work">
+                    <h3>Expected graduation 2021</h3>
+                    <div class="job" style="margin: 0">
+                        <h2>Champlain Valley Union High School</h2>
+                        <h4>4.27 GPA</h4>
+                    </div>
+                    <p>Curricular</p>
+                    <div class="grades">
+                        <div class="grade">
+                            <p>Grade 9</p>
+                            <div>
+                                <span class="bubble class" hidden="A+">Geometry</span>
+                                <span class="bubble class" hidden="A+">Core English</span>
+                                <span class="bubble class" hidden="A+">Earth Sciences</span>
+                                <span class="bubble class" hidden="A+">Spanish 2</span>
+                                <span class="bubble class" hidden="A+">Nexus Program</span>
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <p>Grade 10</p>
+                            <div>
+                                <span class="bubble class" hidden="A+">Biology</span>
+                                <span class="bubble class" hidden="A+">Trigonometry/Precalculus</span>
+                                <span class="bubble class" hidden="A+">Chemistry</span>
+                                <span class="bubble class" hidden="A+">English 10</span>
+                                <span class="bubble class" hidden="A+">Making of the Modern World</span>
+                                <span class="bubble class" hidden="A+">AP Computer Science (Nexus)</span>
+                                <span class="bubble class" hidden="A">Business Law</span>
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <p>Grade 11</p>
+                            <div>
+                                <span class="bubble class" hidden="">AP Calculus</span>
+                                <span class="bubble class" hidden="">AP Chemistry</span>
+                                <span class="bubble class" hidden="">AP Physics C</span>
+                                <span class="bubble class" hidden="">Robotics</span>
+                                <span class="bubble class" hidden="">Spanish 4</span>
+                                <span class="bubble class" hidden="">US & World</span>
+                                <span class="bubble class" hidden="">Gothic Tales</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Extracurricular</p>
+                    <div class="grades">
+                        <div class="grade secondary">
+                            <p>Activities</p>
+                            <div>
+                                <span class="bubble class" hidden="2018-present">Math League</span>
+                                <span class="bubble class" hidden="2017-present">Scholar's Bowl</span>
+                                <span class="bubble class" hidden="2017-present">FIRST Tech Challenge</span>
+                                <span class="bubble class" hidden="2017 & 2018">CyberPatriot</span>
+                                <span class="bubble class" hidden="2018">Philips Academy Capture the Flag</span>
+                            </div>
+                        </div>
+                        <div class="grade secondary">
+                            <p>Community Service</p>
+                            <div>
+                                <span class="bubble class" hidden="2017 & 2018">U.M. ARMY Volunteering</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </html>
