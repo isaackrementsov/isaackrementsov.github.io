@@ -428,6 +428,48 @@ h3 {
     opacity: 0.35;
 }
 
+.container-dark .services p {
+    color: lightgrey;
+}
+
+.container-dark .services h4, .container-dark .services i  {
+    color: #304FFE !important;
+}
+
+ .container-dark .services hr {
+     background-color: #304FFE !important;
+ }
+
+.container-dark .services h5 {
+    color: whitesmoke;
+}
+
+.container-dark .work ul {
+    color: lightgrey;
+}
+
+.container-dark .job h4 {
+    background: linear-gradient(45deg, rgba(232, 234, 246, 0.2), rgba(237, 231, 246, 0.2));
+    color: whitesmoke;
+}
+
+.container-dark .educations h6 {
+    color: whitesmoke;
+}
+
+.container-dark .card {
+    background-color: rgba(170,170,170,0.05);
+    border-style: hidden;
+}
+
+.container-dark hr {
+    background-color: #4f4f4f;
+}
+
+.container-dark .stats, .container-dark .projects-nav {
+    border-color: #4f4f4f;
+}
+
 @media only screen and (max-width: 992px) {
     .break-early {
         flex-direction: column;

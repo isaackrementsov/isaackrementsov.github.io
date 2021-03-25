@@ -197,6 +197,7 @@ let imagesToShow = projectsObj.filter(p => !p.hide).length;
 const languages = 13;
 const skillsPerCol = 7;
 let currentCategory = 'frontend';
+let darkMode = false;
 
 function init(){
 
@@ -431,6 +432,8 @@ function toggleColors(){
     $('.navbar').toggleClass('bg-dark navbar-dark', 'bg-light navbar-light');
     $('body').toggleClass('bg-dark container-dark');
     $('#moon-icon').toggleClass('fa-sun fa-moon');
+    darkMode = !darkMode;
+    sessionStorage.setItem('darkMode', darkMode);
 }
 
 function elementScrolled(elem){
@@ -438,6 +441,11 @@ function elementScrolled(elem){
     var docViewBottom = docViewTop + $(window).height();
     var elemTop = $(elem).offset().top;
     return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+if(sessionStorage.getItem('darkMode') == 'true'){
+    $('#customSwitch1').prop('checked', true);
+    toggleColors();
 }
 
 init();
