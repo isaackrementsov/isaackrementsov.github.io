@@ -1,0 +1,479 @@
+body, nav {
+    transition: 0.2s ease-in-out;
+}
+body.bg-dark {
+    color: lightgrey;
+}
+button:focus {
+    outline: none;
+}
+a:visited {
+    color: inherit;
+}
+
+.nav-link {
+    font-size: 17px;
+}
+
+.gradient {
+    background: linear-gradient(45deg, #7C4DFF, #536DFE);
+    border-radius: 0;
+    color: white;
+}
+
+.navbar {
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    padding: 15px 10px;
+    z-index: 1;
+}
+.navbar-brand {
+    color: #7C4DFF !important;
+}
+.navbar-brand .logo {
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/logo.png');
+}
+.navbar-dark .logo {
+    background-image: url('../img/logo-white.png');
+}
+.navbar-light:not(.navbar-dark) {
+    background-color: white !important;
+}
+.btn-cta {
+    border: 1.1px solid #536DFE;
+    color: #536DFE !important;
+    font-weight: 500;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.btn-cta:hover {
+    background-color: #536DFE !important;
+    color: white !important;
+}
+li a {
+    transition: 0.2s ease-in-out;
+}
+li.active a, li a:hover {
+    color: #536DFE !important;
+}
+li a.cta:hover {
+    background-color: #536DFE;
+    color: white !important;
+}
+.custom-control-input~.custom-control-label::before {
+    background-color: transparent !important;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #536DFE !important;
+}
+.card {
+    background-color: transparent;
+    padding: 15px;
+}
+ul.skills {
+    padding: 0 2px;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+ul.skills li {
+    padding: 7px 10px;
+    margin: 10px 7px;
+    color: #7C4DFF;
+    cursor: pointer;
+}
+ul.skills li span {
+    display: none;
+}
+ul.skills li i {
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 20px;
+}
+ul.skills li .bar {
+    height: 12px;
+    width: 80%;
+    background-color: rgba(150,150,150,0.2);
+    display: inline-block;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+ul.skills li .bar .fill {
+    background: linear-gradient(45deg, #7C4DFF, #536DFE);
+    height: 100%;
+    border-radius: 50px;
+}
+
+.main > .row {
+    margin: 50px 0;
+}
+
+.certs, .center {
+    display: flex;
+    justify-content: center;
+}
+.certs .card {
+    margin: 10px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgba(170,170,170,0.05);
+}
+.certs .card a, h4 {
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+}
+.certs .card h4 {
+    margin: 0;
+    margin-right: 10px;
+}
+.certs .card span, p {
+    padding: 10px 5px;
+    margin: 0;
+}
+.certs .card a {
+    color: #00E676;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+.certs .card a:hover {
+    color: #00C853;
+}
+
+#cert-row .card > * {
+    opacity: 0;
+}
+
+.big-icon i {
+    font-size: 200px;
+    color: #536DFE;
+    padding: 17px 0;
+}
+h3 {
+    color: #536DFE;
+    font-weight: bold;
+}
+.stats {
+    font-size: 20px;
+    margin: 30px 0 !important;
+    padding: 20px 0;
+    padding-bottom: 40px;
+    color: #651FFF;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.stats p {
+    font-weight: 300;
+    font-size: 30px;
+}
+.projects {
+    margin: 20px 0 !important;
+    margin-bottom: 50px !important;
+}
+.projects .small, .projects .large {
+    background: linear-gradient(45deg, #7C4DFF, #536DFE);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.custom-switch .custom-control-label::after {
+    height: 18px !important;
+    width: 18px !important;
+    border-radius: 100px;
+    top: calc(.25rem - 0.5px) !important;
+    left: calc(-2.25rem) !important;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projects-nav {
+    margin: 20px auto !important;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.projects-nav button {
+    background-color: transparent;
+    border-style: hidden;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 10px 15px;
+    color: grey;
+    transition: 0.2s ease-in-out;
+}
+.projects-nav button.active, .projects-nav button:hover {
+    color: #6200EA;
+    font-weight: normal;
+}
+
+.projects .card {
+    margin: 10px;
+    height: 300px;
+    background-size: cover;
+    border-style: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+.row.cover {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    width: 0%;
+    border-radius: 7px;
+}
+.row.cover > * {
+    display: none;
+    margin: 5px 15px;
+}
+.row.cover h1 {
+    color: white;
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+.row.cover h3 {
+    color: whitesmoke;
+    font-size: 23px;
+    font-weight: 300;
+}
+.row.cover >:last-child {
+    margin-bottom: 20px;
+}
+.row.cover .links a {
+    color: whitesmoke;
+    margin: 10px;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+}
+.row.cover .links a:hover {
+    color: white;
+}
+
+.icon-nav i {
+    vertical-align: -9px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: grey;
+}
+.icon-nav i.fa-sun {
+    color: grey;
+}
+.icon-nav i.fa-moon {
+    color: #651FFF;
+}
+
+.bio {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.services, .work {
+    margin: 40px 0;
+    padding: 20px 40px;
+}
+
+.services i {
+    display: block;
+    font-size: 35px;
+    margin: 25px 0;
+}
+
+.center-justify {
+    text-align: justify;
+    padding-right: 80px;
+}
+
+.services h4 {
+    font-weight: bold;
+}
+
+.services h5 {
+    color: grey;
+    font-weight: normal;
+}
+
+.services p {
+    margin-bottom: 90px;
+    font-weight: 300;
+    font-size: 19px;
+    color: grey;
+}
+
+.work {
+    padding: 30px 40px;
+    margin-top: 20px;
+}
+
+.job h4 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #311B92;
+    background: linear-gradient(45deg, #E8EAF6, #EDE7F6);
+    padding: 3px 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.job-header {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #651FFF;
+    font-size: 16px;
+}
+
+.job-header h5 {
+    font-size: inherit;
+}
+
+.job-header > * {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.job-header span {
+    color: #B388FF;
+}
+
+.job h4 img {
+    height: 25px;
+    margin: 5px 12px;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.job ul {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.bubbles span {
+    display: inline-block;
+    padding: 4px 13px;
+    margin: 3px 1px;
+    color: white;
+    border-radius: 13px;
+    background-color: #6200EA;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bubbles {
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.intro {
+    width: 500px;
+}
+
+.educations h6 {
+    color: grey;
+    font-weight: normal;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.educations .job-header {
+    font-size: 18px;
+}
+
+.download-button a {
+    margin: auto;
+    margin-bottom: 25px;
+    display: block;
+    padding: 12px 25px;
+    font-weight: 500;
+    border-radius: 200px;
+    font-size: 17px;
+    color: #651FFF;
+    border: 1px solid #651FFF;
+}
+
+.download-button a:hover {
+    background-color: #651FFF;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    color: white;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.job h4 span {
+    vertical-align: middle;
+}
+
+#book-logo {
+    opacity: 0.35;
+}
+
+@media only screen and (max-width: 992px) {
+    .break-early {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+    .break-early > * {
+        margin: 20px auto;
+        max-width: 100%;
+    }
+    .break-early .big-icon i, .break-early h3 {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .break {
+        flex-direction: column;
+        margin: auto;
+    }
+    .break > * {
+        margin: 20px auto;
+        max-width: 100%;
+    }
+    .break .container {
+        text-align: center !important;
+        margin: 10px auto;
+    }
+
+    .img-responsive {
+        max-width: 100%;
+        height: auto;
+        max-height: 510px;
+        margin: auto !important;
+    }
+
+    .gradient h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #title {
+        display: none;
+    }
+    #title-2 {
+        display: inline !important;
+    }
+}
