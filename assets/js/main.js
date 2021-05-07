@@ -213,70 +213,78 @@ function init(){
 
 function addAllEventListeners(){
 
-    const countingTime = 1000;
+    window.onload = function(){
+        checkScrolled();
+    }
 
     $(window).scroll(function(){
-        if(elementScrolled('#lines') && !scrolled.lines){
-            let i = 0;
-            const refreshTime = 20;
-            const increment = Math.ceil(lines/countingTime*refreshTime)
-            scrolled.lines = true;
-
-            let id = setInterval(() => {
-                if(i + increment < lines){
-                    i += increment;
-                    $('#lines').html(i);
-                }else{
-                    clearInterval(id);
-                }
-            }, refreshTime);
-        }
-
-        if(elementScrolled('#projects') && !scrolled.projects){
-            let i = 0;
-
-            const refreshTime = 100;
-            const increment = Math.ceil(projects/countingTime*refreshTime)
-            scrolled.projects = true;
-
-            let id = setInterval(() => {
-                if(i < projects){
-                    i += increment;
-                    $('#projects').html(i);
-                }else{
-                    clearInterval(id);
-                }
-            }, refreshTime);
-        }
-
-        if(elementScrolled('#languages') && !scrolled.languages){
-            let i = 0;
-
-            const refreshTime = 100;
-            const increment = Math.ceil(languages/countingTime*refreshTime);
-            scrolled.languages = true;
-
-            let id = setInterval(() => {
-                if(i < languages){
-                    i += increment;
-                    $('#languages').html(i);
-                }else{
-                    clearInterval(id);
-                }
-            }, refreshTime);
-        }
-
-        if((elementScrolled('#skills-row') || elementScrolled('#certifications')) && !scrolled.skills){
-            scrolled.skills = true;
-            animateSkills();
-        }
-
-        if(elementScrolled('#cert-row') && !scrolled.certifications){
-            scrolled.certifications = true;
-            animateCertifications();
-        }
+        checkScrolled();
     });
 
+}
+
+function checkScrolled(){
+    const countingTime = 1000;
+
+    if(elementScrolled('#lines') && !scrolled.lines){
+        let i = 0;
+        const refreshTime = 20;
+        const increment = Math.ceil(lines/countingTime*refreshTime)
+        scrolled.lines = true;
+
+        let id = setInterval(() => {
+            if(i + increment < lines){
+                i += increment;
+                $('#lines').html(i);
+            }else{
+                clearInterval(id);
+            }
+        }, refreshTime);
+    }
+
+    if(elementScrolled('#projects') && !scrolled.projects){
+        let i = 0;
+
+        const refreshTime = 100;
+        const increment = Math.ceil(projects/countingTime*refreshTime)
+        scrolled.projects = true;
+
+        let id = setInterval(() => {
+            if(i < projects){
+                i += increment;
+                $('#projects').html(i);
+            }else{
+                clearInterval(id);
+            }
+        }, refreshTime);
+    }
+
+    if(elementScrolled('#languages') && !scrolled.languages){
+        let i = 0;
+
+        const refreshTime = 100;
+        const increment = Math.ceil(languages/countingTime*refreshTime);
+        scrolled.languages = true;
+
+        let id = setInterval(() => {
+            if(i < languages){
+                i += increment;
+                $('#languages').html(i);
+            }else{
+                clearInterval(id);
+            }
+        }, refreshTime);
+    }
+
+    if((elementScrolled('#skills-row') || elementScrolled('#certifications')) && !scrolled.skills){
+        scrolled.skills = true;
+        animateSkills();
+    }
+
+    if(elementScrolled('#cert-row') && !scrolled.certifications){
+        scrolled.certifications = true;
+        animateCertifications();
+    }
 }
 
 function addSkills(){
