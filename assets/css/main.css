@@ -530,6 +530,10 @@ h3 {
         padding-left: 8%;
     }
 
+    nav.navbar {
+        position: absolute;
+    }
+
     .navbar-nav {
         flex-direction: row;
     }
