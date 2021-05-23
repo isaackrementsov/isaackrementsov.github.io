@@ -170,7 +170,7 @@ const jobs = [
 const educations = [
     {
         school: 'CVU High School',
-        icon: 'assets/img/CVU-Logo.png',
+        icon: 'assets/img/CVU-logo.png',
         place: 'Hinesburg, VT',
         dates: ['Sep 2017', 'Jun 2021'],
         bullets: [
