@@ -169,7 +169,8 @@ const jobs = [
 
 const educations = [
     {
-        school: 'Champlain Valley Union High School',
+        school: 'CVU High School',
+        icon: 'assets/img/CVU-Logo.png',
         place: 'Hinesburg, VT',
         dates: ['Sep 2017', 'Jun 2021'],
         bullets: [
@@ -314,7 +315,8 @@ function addEducations(){
 
         let educationHtml =
             `<div class="job">
-                <div class="job-header"><h5>${education.school}</h5><span>${education.dates.join(' &mdash; ')}</span></div>
+                <h4><img src="${education.icon}"/><span>${education.school}</span></h4>
+                <div class="job-header"><span>${education.dates.join(' &mdash; ')}</span></div>
                 <h6>${education.place}</h6>
                 <ul>
                     ${education.bullets.map(b => `<li>${b}</li>`).join('')}

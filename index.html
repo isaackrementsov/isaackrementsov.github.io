@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
         <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -52,143 +53,145 @@
                 </ul>
             </div>
         </nav>
-        <div class="jumbotron jumbotron-fluid gradient">
-            <div class="container">
-                <div class="row break">
-                    <div>
-                        <div class="container" style="text-align: right">
-                            <img src="assets/img/pic.jpg" class="img-responsive shadow rounded" width="300"/>
+        <div class="cards">
+            <div class="jumbotron jumbotron-fluid gradient">
+                <div class="container">
+                    <div class="row break">
+                        <div>
+                            <div class="container" style="text-align: right">
+                                <img src="assets/img/pic.jpg" class="img-responsive shadow rounded" width="300"/>
+                            </div>
+                        </div>
+                        <div class="intro">
+                            <div class="container">
+                                <h1>Hi, I'm Isaac Krementsov</h1>
+                                <p class="bio">
+                                    I'm an enthusiastic web developer with a versatile skill set. At the beginning of my programming experience,
+                                    I recognized that I was never done learning. Since then, I have become most familiar with using NodeJS, MongoDB,
+                                    Java, Python, SQL, HTML5, and more while continuously adding to that list. Whether you simply want to make your
+                                    business known or need a real-time application, I'm here to help.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="intro">
-                        <div class="container">
-                            <h1>Hi, I'm Isaac Krementsov</h1>
-                            <p class="bio">
-                                I am an enthusiastic web developer with a versatile skill set. At the beginning of my programming experience,
-                                I recognized that I was never done learning. Since then, I have become most familiar with using NodeJS, MongoDB,
-                                Java, Python, SQL, HTML5, and more while continuously adding to that list. Whether you simply want to make your
-                                business known or need a real-time application, I am here to help.
+                </div>
+            </div>
+            <div class="container main">
+                <div class="row download-button text-center">
+                    <a href="assets/img/Resume.pdf">Download Resume</a>
+                </div>
+                <hr/>
+                <div class="row break-early">
+                    <div class="col-sm-4">
+                        <div class="row big-icon">
+                            <i class="fas fa-book-open" id="book-logo"></i>
+                        </div>
+                        <div class="row">
+                            <h3>Professional Skills</h3>
+                            <p class="center-justify">
+                                I focus on mobile, desktop and web app development.
+                                My skills are constantly evolving to fit the needs of
+                                modern software.
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container main">
-            <div class="row download-button text-center">
-                <a href="assets/img/Resume.pdf">Download Resume</a>
-            </div>
-            <hr/>
-            <div class="row break-early">
-                <div class="col-sm-4">
-                    <div class="row big-icon">
-                        <i class="fas fa-book-open" id="book-logo"></i>
-                    </div>
-                    <div class="row">
-                        <h3>Professional Skills</h3>
-                        <p class="center-justify">
-                            I focus on mobile, desktop and web app development.
-                            My skills are constantly evolving to fit the needs of
-                            modern software.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-8 card">
-                    <div class="row" id="skills-row">
-                        <div class="col-md-6">
-                            <ul class="skills"></ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="skills"></ul>
+                    <div class="col-sm-8 card">
+                        <div class="row" id="skills-row">
+                            <div class="col-md-6">
+                                <ul class="skills"></ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="skills"></ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <h3 class="text-center" id="certifications">Certifications</h3>
-            <div class="row certs" id="cert-row"></div>
-            <h3 class="text-center">Projects</h3>
-            <div class="row center projects-nav flex-container">
-                <button id="frontend" onclick="sortProjects('frontend')">Frontend</button>
-                <button id="full-stack" onclick="sortProjects('full-stack')">Full-stack</button>
-                <button id="backend" onclick="sortProjects('backend')">Backend</button>
-                <button id="native" onclick="sortProjects('native')">Native</button>
-                <button id="all" onclick="sortProjects('all')">All Projects</button>
-            </div>
-            <div class="row center projects flex-container" id="projects-container">
-            </div>
-            <h3 class="text-center" style="padding-top: 30px" id="services">Services</h3>
-            <div class="card services">
-                <div class="row center">
-                    <div class="col-md-4">
-                        <i class="fas fa-paint-roller" style="color: #1A237E"></i>
-                        <h4 style="color: #1A237E">Web Design</h4>
-                        <h5>HTML, CSS, and JS websites</h5>
-                        <hr style="background-color: #1A237E"/>
-                        <p>
-                            If you want a simple front-end website, I can spin your dreams into HTML.
-                            Perfect for anyone who wants to statically display their product without
-                            complex server interactions.
-                        </p>
-                        <div class="bubbles">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                <h3 class="text-center" id="certifications">Certifications</h3>
+                <div class="row certs" id="cert-row"></div>
+                <h3 class="text-center">Projects</h3>
+                <div class="row center projects-nav flex-container">
+                    <button id="frontend" onclick="sortProjects('frontend')">Frontend</button>
+                    <button id="full-stack" onclick="sortProjects('full-stack')">Full-stack</button>
+                    <button id="backend" onclick="sortProjects('backend')">Backend</button>
+                    <button id="native" onclick="sortProjects('native')">Native</button>
+                    <button id="all" onclick="sortProjects('all')">All Projects</button>
+                </div>
+                <div class="row center projects flex-container" id="projects-container">
+                </div>
+                <h3 class="text-center" style="padding-top: 30px" id="services">Services</h3>
+                <div class="card services">
+                    <div class="row center">
+                        <div class="col-md-4">
+                            <i class="fas fa-paint-roller" style="color: #1A237E"></i>
+                            <h4 style="color: #1A237E">Web Design</h4>
+                            <h5>HTML, CSS, and JS websites</h5>
+                            <hr style="background-color: #1A237E"/>
+                            <p>
+                                If you want a simple front-end website, I can spin your dreams into HTML.
+                                Perfect for anyone who wants to statically display their product without
+                                complex server interactions.
+                            </p>
+                            <div class="bubbles">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fas fa-cloud" style="color: #303F9F"></i>
+                            <h4 style="color: #303F9F">Backend Development</h4>
+                            <h5>Behind-the-scenes magic</h5>
+                            <hr style="background-color: #303F9F"/>
+                            <p>
+                                Session data and database storage can be used with server-side technologies.
+                                Whether you want an online store or a real-time chat, anything is possible with
+                                backend development.
+                            </p>
+                            <div class="bubbles">
+                                <span>Javalin</span>
+                                <span>GoLang</span>
+                                <span>NodeJS</span>
+                                <span>Flask</span>
+                                <span>SQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fas fa-dice-d6" style="color: #3F51B5"></i>
+                            <h4 style="color: #3F51B5">Full Stack Applications</h4>
+                            <h5>The whole package</h5>
+                            <hr style="background-color: #3F51B5"/>
+                            <p>
+                                Offering synchronization between the two systems, full-stack development gives you
+                                a complete website.
+                            </p>
+                            <div class="bubbles">
+                                <span>React</span>
+                                <span>Embedded JavaScript</span>
+                                <span>FreeMarker</span>
+                                <span>Jinja2</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <i class="fas fa-cloud" style="color: #303F9F"></i>
-                        <h4 style="color: #303F9F">Backend Development</h4>
-                        <h5>Behind-the-scenes magic</h5>
-                        <hr style="background-color: #303F9F"/>
-                        <p>
-                            Session data and database storage can be used with server-side technologies.
-                            Whether you want an online store or a real-time chat, anything is possible with
-                            backend development.
-                        </p>
-                        <div class="bubbles">
-                            <span>Javalin</span>
-                            <span>GoLang</span>
-                            <span>NodeJS</span>
-                            <span>Flask</span>
-                            <span>SQL</span>
-                            <span>MongoDB</span>
-                        </div>
+                </div>
+                <h3 class="text-center" style="padding-top: 20px">Experience</h3>
+                <div class="row stats text-center">
+                    <div class="col-sm-4">
+                        <p id="lines">0</p> Lines of Code
                     </div>
-                    <div class="col-md-4">
-                        <i class="fas fa-dice-d6" style="color: #3F51B5"></i>
-                        <h4 style="color: #3F51B5">Full Stack Applications</h4>
-                        <h5>The whole package</h5>
-                        <hr style="background-color: #3F51B5"/>
-                        <p>
-                            Offering synchronization between the two systems, full-stack development gives you
-                            a complete website.
-                        </p>
-                        <div class="bubbles">
-                            <span>React</span>
-                            <span>Embedded JavaScript</span>
-                            <span>FreeMarker</span>
-                            <span>Jinja2</span>
-                        </div>
+                    <div class="col-sm-4">
+                        <p id="projects">0</p> Major Projects
+                    </div>
+                    <div class="col-sm-4">
+                        <p id="languages">0</p> Languages
                     </div>
                 </div>
-            </div>
-            <h3 class="text-center" style="padding-top: 20px">Experience</h3>
-            <div class="row stats text-center">
-                <div class="col-sm-4">
-                    <p id="lines">0</p> Lines of Code
+                <h3 class="text-center" style="padding-top: 20px">Work</h3>
+                <div class="card work" id="jobs">
                 </div>
-                <div class="col-sm-4">
-                    <p id="projects">0</p> Major Projects
-                </div>
-                <div class="col-sm-4">
-                    <p id="languages">0</p> Languages
-                </div>
+                <h3 class="text-center" style="padding-top: 20px">Education</h3>
+                <div class="card work educations" id="educations"></div>
             </div>
-            <h3 class="text-center" style="padding-top: 20px">Work</h3>
-            <div class="card work" id="jobs">
-            </div>
-            <h3 class="text-center" style="padding-top: 20px">Education</h3>
-            <div class="card work educations" id="educations"></div>
         </div>
     </body>
     <script src="assets/js/main.js"></script>

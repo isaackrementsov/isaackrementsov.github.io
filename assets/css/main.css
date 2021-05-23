@@ -11,6 +11,16 @@ a:visited {
     color: inherit;
 }
 
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.cards {
+    margin-top: 70px;
+}
+
 .nav-link {
     font-size: 17px;
 }
@@ -32,7 +42,7 @@ a:visited {
 .navbar-brand .logo {
     margin: 0 5px;
     height: 30px;
-    width: 30px;
+    width: 35px;
     background-size: cover;
     background-position: center;
     background-image: url('../img/logo.png');
@@ -508,6 +518,25 @@ h3 {
 
     .gradient h1 {
         font-size: 25px;
+    }
+
+    .center-justify {
+        padding-right: 8%;
+        padding-left: 8%;
+        margin: auto;
+    }
+
+    ul {
+        padding-left: 8%;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-nav li {
+        margin: 10px;
+        margin-bottom: 0;
     }
 }
 
