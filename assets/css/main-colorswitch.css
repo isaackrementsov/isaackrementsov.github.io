@@ -26,7 +26,7 @@ nav.navbar {
 }
 
 .gradient {
-    background: linear-gradient(45deg, #FF3D00, #FF5252);
+    background: linear-gradient(45deg, #7C4DFF, #536DFE);
     border-radius: 0;
     color: white;
 }
@@ -37,7 +37,7 @@ nav.navbar {
     z-index: 1;
 }
 .navbar-brand {
-    color: #FF3D00 !important;
+    color: #7C4DFF !important;
 }
 .navbar-brand .logo {
     margin: 0 5px;
@@ -54,31 +54,31 @@ nav.navbar {
     background-color: white !important;
 }
 .btn-cta {
-    border: 1.1px solid #FF3D00;
-    color: #FF3D00 !important;
+    border: 1.1px solid #536DFE;
+    color: #536DFE !important;
     font-weight: 500;
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
 .btn-cta:hover {
-    background-color: #FF3D00 !important;
+    background-color: #536DFE !important;
     color: white !important;
 }
 li a {
     transition: 0.2s ease-in-out;
 }
 li.active a, li a:hover {
-    color: #FF3D00 !important;
+    color: #536DFE !important;
 }
 li a.cta:hover {
-    background-color: #FF3D00;
+    background-color: #536DFE;
     color: white !important;
 }
 .custom-control-input~.custom-control-label::before {
     background-color: transparent !important;
 }
 .custom-control-input:checked~.custom-control-label::before {
-    background-color: #FF3D00 !important;
+    background-color: #536DFE !important;
 }
 .card {
     background-color: transparent;
@@ -92,7 +92,7 @@ ul.skills {
 ul.skills li {
     padding: 7px 10px;
     margin: 10px 7px;
-    color: #FF6E40;
+    color: #7C4DFF;
     cursor: pointer;
 }
 ul.skills li span {
@@ -112,7 +112,7 @@ ul.skills li .bar {
     vertical-align: middle;
 }
 ul.skills li .bar .fill {
-    background: linear-gradient(45deg, #FF6E40, #FF5252);
+    background: linear-gradient(45deg, #7C4DFF, #536DFE);
     height: 100%;
     border-radius: 50px;
 }
@@ -159,11 +159,11 @@ ul.skills li .bar .fill {
 
 .big-icon i {
     font-size: 200px;
-    color: #FF3D00;
+    color: #536DFE;
     padding: 17px 0;
 }
 h3 {
-    color: #FF3D00;
+    color: #536DFE;
     font-weight: bold;
 }
 .stats {
@@ -171,7 +171,7 @@ h3 {
     margin: 30px 0 !important;
     padding: 20px 0;
     padding-bottom: 40px;
-    color: #FF3D00;
+    color: #651FFF;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
 }
@@ -184,7 +184,7 @@ h3 {
     margin-bottom: 50px !important;
 }
 .projects .small, .projects .large {
-    background: linear-gradient(45deg, #FF3D00, #FF3D00);
+    background: linear-gradient(45deg, #7C4DFF, #536DFE);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@ h3 {
     transition: 0.2s ease-in-out;
 }
 .projects-nav button.active, .projects-nav button:hover {
-    color: #DD2C00;
+    color: #6200EA;
     font-weight: normal;
 }
 
@@ -281,7 +281,7 @@ h3 {
     color: grey;
 }
 .icon-nav i.fa-moon {
-    color: #FF3D00;
+    color: #651FFF;
 }
 
 .bio {
@@ -330,8 +330,8 @@ h3 {
 .job h4 {
     font-size: 18px;
     font-weight: normal;
-    color: #BF360C;
-    background: linear-gradient(45deg, #FFEBEE, #FBE9E7);
+    color: #311B92;
+    background: linear-gradient(45deg, #E8EAF6, #EDE7F6);
     padding: 3px 10px;
     width: 100%;
     border-radius: 5px;
@@ -342,7 +342,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #FF3D00;
+    color: #651FFF;
     font-size: 16px;
 }
 
@@ -357,7 +357,7 @@ h3 {
 }
 
 .job-header span {
-    color: #FFAB91;
+    color: #B388FF;
 }
 
 .job h4 img {
@@ -379,7 +379,7 @@ h3 {
     margin: 3px 1px;
     color: white;
     border-radius: 13px;
-    background-color: #DD2C00;
+    background-color: #6200EA;
     font-weight: 500;
     font-size: 14px;
 }
@@ -418,12 +418,12 @@ h3 {
     font-weight: 500;
     border-radius: 200px;
     font-size: 17px;
-    color: #FF3D00;
-    border: 1px solid #FF3D00;
+    color: #651FFF;
+    border: 1px solid #651FFF;
 }
 
 .download-button a:hover {
-    background-color: #FF3D00;
+    background-color: #651FFF;
     box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
     color: white;
     text-decoration: none;
@@ -443,11 +443,11 @@ h3 {
 }
 
 .container-dark .services h4, .container-dark .services i  {
-    color: #D50000 !important;
+    color: #304FFE !important;
 }
 
  .container-dark .services hr {
-     background-color: #D50000 !important;
+     background-color: #304FFE !important;
  }
 
 .container-dark .services h5 {
