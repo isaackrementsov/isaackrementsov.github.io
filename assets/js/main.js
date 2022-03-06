@@ -24,6 +24,14 @@ const certifications = [
 
 const projectsObj = [
     {
+        title: "Portfolio App",
+        subtitle: "Web application for students to build personalized learning portfolios",
+        pageLink: null,
+        ghLink: "https://github.com/isaackrementsov/cvu-portfolio-app",
+        pictures: ["server.jfif"],
+        categories: ["full-stack"]
+    },
+    {
         title: "ChefLyfe",
         subtitle: "Recipe, Menu & Ingredient Manager",
         // pageLink: "https://cheflyfe.com",
@@ -128,7 +136,7 @@ const projectsObj = [
         ghLink: "https://github.com/isaackrementsov/Imgupload",
         pictures: ["server.jfif"],
         categories: ["full-stack"]
-    },
+    }
 ];
 
 const jobs = [
@@ -179,7 +187,7 @@ const educations = [
             "Clubs & Societies: Stanford Decriminalization Committee"
         ]
     },
-    {
+    /*{
         school: "Champlain Valley Union High School",
         icon: "assets/img/CVU-logo.png",
         place: "Hinesburg, VT",
@@ -188,7 +196,7 @@ const educations = [
             "GPA: 4.28",
             "Clubs & Societies: Robotics, Quiz Bowl, Math League, Computer Club, Rowland Committee"
         ]
-    }
+    }*/
 ];
 
 const lines = 39970;

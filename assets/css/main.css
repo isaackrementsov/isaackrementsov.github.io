@@ -37,7 +37,8 @@ nav.navbar {
     z-index: 1;
 }
 .navbar-brand {
-    color: #FF3D00 !important;
+    color: #FF5252 !important;
+    font-weight: bold;
 }
 .navbar-brand .logo {
     margin: 0 5px;
