@@ -28,7 +28,7 @@ const projectsObj = [
         subtitle: "Web application for students to build personalized learning portfolios",
         pageLink: null,
         ghLink: "https://github.com/isaackrementsov/cvu-portfolio-app",
-        pictures: ["server.jfif"],
+        pictures: ["portfolio-app.png"],
         categories: ["full-stack"]
     },
     {
@@ -141,10 +141,21 @@ const projectsObj = [
 
 const jobs = [
     {
+        company: "Jet Wallet",
+        icon: "assets/img/jet.svg",
+        title: "Full-Stack Engineer",
+        dates: ["Mar 2022", "Jun 2022"],
+        bullets: [
+            "Worked with a team to develop critical frontend and backend features in time for a scheduled launch date",
+            "Headed development of a progressive web application and corresponding APIs for viewing user profiles outside of the Jet mobile app",
+            "Wrote scripts and APIs for scraping, fetching, and updating avatars"
+        ]
+    },
+    {
         company: "Fiverr.com/Independent",
         icon: "assets/img/fiverr.png",
         title: "Freelance Web Developer",
-        dates: ["Sep 2018", "Present"],
+        dates: ["Sep 2018", "Dec 2021"],
         bullets: [
             "Completed 13+ software development projects for clients obtained through Fiverr.com and independent networking",
             "Maintained a 5-star rating on Fiverr.com",
@@ -181,9 +192,10 @@ const educations = [
         icon: "assets/img/stanford-logo.png",
         place: "Stanford, CA",
         dates: ["Sep 2021", "Jun 2025"],
+        gpa: 3.93,
+        degree: "B.S., Symbolic Systems",
         bullets: [
-            "Major: B.S., Symbolic Systems (planned)",
-            "GPA: 3.73",
+            "Relevant coursework: Programming Abstractions, Coding for Social Good,  Modern Mathematics: Continuous Methods, Computer Organization & Systems, Minds and Machines, Intro to Probability for Computer Scientists, Problem-Solving for the CS Technical Interview",
             "Clubs & Societies: Stanford Decriminalization Committee"
         ]
     },
@@ -332,8 +344,8 @@ function addEducations(){
         let educationHtml =
             `<div class="job">
                 <h4><img src="${education.icon}"/><span>${education.school}</span></h4>
-                <div class="job-header"><span>${education.dates.join(" &mdash; ")}</span></div>
-                <h6>${education.place}</h6>
+                <div class="job-header"><h5>${education.degree}</h5><span>${education.dates.join(" &mdash; ")}</span></div>
+                <h6>GPA: ${education.gpa}</h6>
                 <ul>
                     ${education.bullets.map(b => `<li>${b}</li>`).join("")}
                 </ul>
